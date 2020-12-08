@@ -1,0 +1,21 @@
+<template>
+  <div class="slds-m-around_small">
+    <lightning-card title="Parent">
+      <lightning-layout horizontal-align="space">
+        <template for:each={childs} for:item="child">
+          <lightning-layout-item
+            key={child.title}
+            padding="around-small"
+            onbutton_click={handleClildButtonClick}
+          >
+            <p>{child.title}: {child.status}</p>
+            <c-child-event
+              title={child.title}
+              status={child.status}
+            ></c-child-event>
+          </lightning-layout-item>
+        </template>
+      </lightning-layout>
+    </lightning-card>
+  </div>
+</template>

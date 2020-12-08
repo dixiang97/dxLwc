@@ -1,0 +1,19 @@
+<template>
+  <div class="slds-m-around_medium">
+    <lightning-card title="Grand Parent">
+      <lightning-button
+        label="Reset All"
+        variant="brand"
+        onclick={handleResetButton}
+        slot="actions"
+      ></lightning-button>
+      <div class="slds-p-around_medium">
+        <p>{numberOfSelectedChild} of 3 children selected</p>
+        <c-parent-event
+          childs={childs}
+          onbutton_click={handleButtonClick}
+        ></c-parent-event>
+      </div>
+    </lightning-card>
+  </div>
+</template>
