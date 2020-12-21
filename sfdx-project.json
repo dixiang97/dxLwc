@@ -6,7 +6,7 @@
     },
     {
       "path": "Http-Callout-Test",
-      "default": true
+      "default": false
     }
   ],
   "namespace": "",
